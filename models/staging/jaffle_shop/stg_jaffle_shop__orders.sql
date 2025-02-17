@@ -4,4 +4,5 @@ select
     order_date,
     status
 
-from raw.jaffle_shop.orders
+from from {{source('jaffle_shop','orders')}}
+-- {{ source('source_name', 'object_name') }}
