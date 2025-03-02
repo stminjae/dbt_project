@@ -23,7 +23,7 @@ customer_orders as (
         customer_orders.most_recent_order_date,
         coalesce (customer_orders.number_of_orders, 0) as number_of_orders,
         customer_orders.lifetime_value
-    from customers
+    from {{ref('stg_jaffle_shop__customers')}} customers
     left join customer_orders using (customer_id)
 )
 select * from final

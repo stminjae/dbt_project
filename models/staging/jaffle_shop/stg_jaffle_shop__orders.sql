@@ -1,8 +1,7 @@
-select
-    id as order_id,
-    user_id as customer_id,
-    order_date,
-    status
+SELECT 
+    ORDER_ID, 
+    CUSTOMER_ID,  
+    ORDER_DATE, 
+    STATUS
+FROM {{ source('jaffle_shop', 'orders') }}
 
-from from {{source('jaffle_shop','orders')}}
--- {{ source('source_name', 'object_name') }}

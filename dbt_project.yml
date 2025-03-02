@@ -42,5 +42,9 @@ models:
     marts: 
       +materialized: table
     # Applies to all files under models/example/
-    example:
-      +materialized: table
+  stripe: 
+    staging:
+      +materialized: view 
+    marts: 
+      +materialized: table 
+
