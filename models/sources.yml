@@ -1,0 +1,6 @@
+sources: 
+    - name: stripe
+      database: analytics
+      schema: stripe 
+      tables:
+      - name: payments
