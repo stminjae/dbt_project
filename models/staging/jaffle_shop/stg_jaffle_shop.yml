@@ -21,7 +21,6 @@ models:
                 - shipped
                 - pending 
                 - cancelled
-                - refunded 
       - name: customer_id
         description: Foreign key to stg_customers.customer_id
         tests:
